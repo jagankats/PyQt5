@@ -1,10 +1,6 @@
-- 👋 Hi, I’m @jagankats
-- 👀 I’m interested in Python 
-- 🌱 I’m currently learning Python - PyQt5
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me jagankats@gmail.com
+- 👋 Hi, I’m JaganMohan
+- 👀 I’m interested in Python Learning 
+- 🌱 I’m currently Python - PyQt5 based GUI project
 
-<!---
-jagankats/jagankats is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+thanks :)
+
