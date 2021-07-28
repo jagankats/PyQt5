@@ -2,11 +2,11 @@ from PyQt5 import QtCore, QtWidgets
 from PyQt5 import uic
 import sys, time, random
 
-class DataClass(QtCore.QThread):
+class DataThreadClass(QtCore.QThread):
     any_signal = QtCore.pyqtSignal(float, float, float, float)
 
     def __init__(self, parent=None):
-        super(DataClass, self).__init__(parent)
+        super(DataThreadClass, self).__init__(parent)
 
     def run(self):
         print('Starting thread...')
@@ -40,22 +40,22 @@ class MyApp(QtWidgets.QMainWindow):
         self.ui = uic.loadUi('main.ui', self)
 
         self.pushButton_2.setEnabled(False)
-        self.pushButton.clicked.connect(self.start_worker)
-        self.pushButton_2.clicked.connect(self.stop_worker)
+        self.pushButton.clicked.connect(self.start_thread)
+        self.pushButton_2.clicked.connect(self.stop_thread)
 
-    def start_worker(self):
-        self.thread = DataClass(parent=None)
+    def start_thread(self):
+        self.thread = DataThreadClass(parent=None)
         self.thread.start()
-        self.thread.any_signal.connect(self.my_function)
+        self.thread.any_signal.connect(self.update_fun)
         self.pushButton.setEnabled(False)
         self.pushButton_2.setEnabled(True)
 
-    def stop_worker(self):
+    def stop_thread(self):
         self.thread.stop()
         self.pushButton.setEnabled(True)
         self.pushButton_2.setEnabled(False)
 
-    def my_function(self, lat, long, temp, humidity):
+    def update_fun(self, lat, long, temp, humidity):
         temp = str(temp) + " Degree"
         humidity = str(humidity) + " %"
         self.ui.lineEdit.setText(str(lat))
