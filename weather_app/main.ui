@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Weather and Field Soil Report App</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(112, 112, 112);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);
+background-color: rgb(0, 85, 0);</string>
+        </property>
+        <property name="text">
+         <string>Get Weather and Field Soil Report</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="lbDT">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Date &amp; Time:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leDT">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>DD-MM-YYYY HH:MM:SS</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="lbWC">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Weather Condition:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leWC">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="lbWS">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Wind Speed:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leWS">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="lbH">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Humidity:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leH">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="lbT">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Temperature:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leT">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="lbC">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Cloudiness:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leC">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="lbSTS">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Surface Temp of Soil:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leSTS">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="lbST10">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Soil Temp at 10cm of Depth:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leST10">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="lbSM">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 238, 0);
+border-style: outset;
+border-radius: 10px;
+border-width: 2px;
+border-color: rgb(107, 53, 80);</string>
+          </property>
+          <property name="text">
+           <string>Soil Moisture:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leSM">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 124, 144);
+border-style: solid;
+border-width: 1px;
+border-color:  rgb(238, 238, 0);
+border-radius: 0px;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
